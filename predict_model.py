@@ -5,7 +5,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Путь к сохраненной модели
-model_path = 'model/efficientnetb0_model.h5'
+
+model_path = 'model/efficientnetb0_model_resaved.keras'
+
+
 
 # Аргументы командной строки
 parser = argparse.ArgumentParser()
