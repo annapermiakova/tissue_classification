@@ -15,7 +15,7 @@
 
 ### 1. Установка зависимостей
 ```bash
-pip install -r requirements.txt
+- 'pip install -r requirements.txt'
 2. Обучение модели
 Для запуска обучения выполните:
 
