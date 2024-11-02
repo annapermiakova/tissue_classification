@@ -15,20 +15,40 @@
 
 ### 1. Установка зависимостей
 - `pip install -r requirements.tx`
--
+
 ### 2. Обучение модели
 Для запуска обучения выполните:
 - `python train_model.py`
-- 
+  
 ### 3.Генерация предсказаний
 
 Чтобы получить предсказания на новых данных и сохранить их в CSV:
 - `python predict_model.py --data_path /path/to/test_data`
-- 
-Использованные данные
+  
+### Использованные данные
+
 Модель обучена на изображениях тканей, разделённых на опухолевые и нормальные.
 
-### 4. Сохранить файл
+В данной модели использован набор данных  содержащий 10 000 гистопатологических изображений. Все изображения имеют размер 768 x 768 пикселей и находятся в формате файла jpeg.
+Изображения были созданы из оригинальной выборки HIPAA-совместимых и проверенных источников, состоящих из  500 изображений толстой кишки (250 аденокарцином толстой кишки) и расширены до 5 000 с помощью пакета Augmentor.
+В наборе данных есть два класса, каждый из которых содержит 5 000 изображений, а именно:
+Аденокарцинома толстой кишки
+Доброкачественная ткань толстой кишки
+
+### набор данных
+Оригинальная статья
+Borkowski AA, Bui MM, Thomas LB, Wilson CP, DeLand LA, Mastorides SM. Набор данных гистопатологических изображений рака легких и толстой кишки (LC25000). arXiv:1912.12142v1 [eess.IV], 2019
+
+Соответствующие ссылки
+https://arxiv.org/abs/1912.12142v1
+https://github.com/tampapath/lung_colon_image_set
+Набор данных BibTeX
+@article {,
+title= {LC25000 Lung and colon histopathological image set},
+keywords= {cancer,histopathology},
+author= {Andrew A. Borkowski, Marilyn M. Bui, L. Brannon Thomas, Catherine P. Wilson, Lauren A. DeLand, Stephen M. Mastorides},
+url= { https://github.com/tampapath/lung_colon_image_set}
+}
 
 
 
